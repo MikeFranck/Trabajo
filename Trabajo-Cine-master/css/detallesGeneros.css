@@ -1,0 +1,118 @@
+.body{
+    background-color: grey;
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+    padding: 20px;
+}
+.header{
+    display: grid;
+    grid-template-columns: 5% 80% 15%;
+    background-color: black;
+    color: whitesmoke;
+}
+.headerIzquierda{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.barraDeNavegacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 20px 0px 20px 0px;
+}
+.a{
+    color: white;
+    text-decoration: none;
+}
+.contacto{
+    color: white;
+    text-decoration: none;
+}
+.headerDerecha{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer{
+    display: grid;
+    grid-template-rows: 2;
+    background-color: black;
+    color: whitesmoke;
+}
+.imagenesPelicula{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.imagenesSerie{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.titulosPeliculasYSeries{
+    color: whitesmoke;
+    text-align: center;
+}
+.nombres{
+    display: flex;
+    justify-content: space-between;
+}
+.contacto{
+    text-align: center;
+    color: whitesmoke;
+}
+.redesSociales{
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+}
+.img{
+    width: 100%;
+}
+.titulo{ 
+    font-size: 40px;
+    text-align: center;
+    color: whitesmoke;
+}
+.tmdb{
+    text-align: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
+.series{ 
+    font-size: 40px;
+    text-align: center;
+    color: whitesmoke;
+}
+h3{
+    color: whitesmoke;
+}
+@media(max-width:768px){
+    .imagenesPelicula{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .imagenesSerie{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(max-width: 426px){
+    .imagenesPelicula{
+        grid-template-columns: 1fr 1fr;
+    }
+    .imagenesSerie{
+        grid-template-columns: 1fr 1fr;
+    }
+    .titulo{
+        font-size: 28px;
+    }
+    .series{
+        font-size: 28px;
+    }
+    .titulosPeliculasYSeries{
+        font-size: 22px;
+    }
+
+}
