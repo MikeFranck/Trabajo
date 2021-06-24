@@ -24,7 +24,7 @@ fetch('https://cors-anywhere.herokuapp.com/http://api.deezer.com/genre/')
 //iteramos la informasion para buscar el nombre del genero y su foto    
 let generos ='';
     for(let i of datos["data"]){
-     generos += `<div><img src=${i.picture_medium}><br>${i.name}<br><br></div>`
+     generos += `<div><img href="detalle-generos.html?id=${genre.id}" src=${i.picture_medium}><br>${i.name}<br><br></div>`
 }
  
 //pego la informasion que traje en el html en div con id "result"
